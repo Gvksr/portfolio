@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da94c96b30.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/S logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="hearder-text">
+                <h1>Hello, I'm <span>Gottumukkala Venkata Krishna Sai Reddy</span><br>From India</h1>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+    </div>
+    <!----------------------------About-------------------------->
+<div id="About">
+    <div class="container">
+       <div class="row">
+            <div class="about-col-1">
+                <img src="Images/0000555 (1).jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I,m Gottumukkala Venkata Krishna Sai Reddy<br>
+                    this is my Portfolio for my work</p>
+            <div class="tab-titles">
+                <p class="tab-linkes active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-linkes" onclick="opentab('experience')">Projects</p>
+                <p class="tab-linkes" onclick="opentab('education')">Education</p>
+            </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend Development</span><br>designing web/app for client interfaces</li>
+                        <li><span>Backend Development</span><br>Ability to Build Dynamic & Logical Development</li>
+                        <li><span>DataBase Development</span><br>Ability to Build more effective DBMS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Title</span><br>Description</li>
+                        <li><span>Title</span><br>Description</li>
+                        <li><span>Title</span><br>Description</li>
+                        <li><span>Title</span><br>Description</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - 2025</span><br><strong>Masters of Computer Application (MCA) </strong> - Amrita Sai Institute of Science and Technology<br>[JNTU Kakinada],Vijayawada,AP</li>
+                        <li><span>2020 - 2023</span><br><strong>Bachelor of Science in Computer Science(Bsc CS)</strong> - Akshara Degree College<br>[Krishna University],Ponnavaram,AP</li>
+                        <li><span>2018 - 2020</span><br><strong>Intermediate (M.p.c)</strong> - Sri Akshara Junior College,Kanchikacherla,AP</li>
+                        <li><span>2018</span><br><strong>SSC</strong> - Z P High School,Paritala,AP</li>
+                    </ul>
+                </div>        
+            </div>
+       </div> 
+    </div>
+</div>
+<!-- ---------services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web Design</h2>
+                <p>lorem ipsum color is the main web desing service
+                for this text description.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>lorem ipsum color is the main web desing service
+                for this text description.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>APP Design</h2>
+                <p>lorem ipsum color is the main web desing service
+                for this text description.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------portfolio--------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.webp">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>the app connects you to the talented people around the world.
+                    download it from playstore.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.webp">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>the app connects you to the talented people around the world.
+                    download it from playstore.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.avif">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>the app connects you to the talented people around the world.
+                    download it from playstore.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+ <!-- -----------contact------------- -->
+  <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>gvksaireddy2588@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>(+91) 8639474002</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Fullstack Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-regular fa-copyright"></i> kevin. Made with <i class="fa-solid fa-heart"></i> by easy tutorials</p>
+        </div>
+  </div>
+<script>
+    var tablinkes = document.getElementsByClassName("tab-linkes");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinkes){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz98ZH0KPGyO860vHrXnLuqXznSvgpecG8KLojNmmsh-_EL4APczOk_utQxRibea7yLPQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
